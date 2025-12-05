@@ -1,7 +1,5 @@
 # On-device AI Voice Assistant
 
-> Please note this Demo code is compatible with  Astra OOBE SDK 1.8 (kirkstone) and below.Images.
-
 This demonstration showcases an contextual AI voice assistant operating entirely on-device, with no cloud dependency or offloading, designed to run on [Synaptics Astra](https://www.synaptics.com/products/embedded-processors/astra-machina-foundation-series) Machina board. 
 
 - Understanding context-specific queries.
