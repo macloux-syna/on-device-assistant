@@ -53,6 +53,7 @@ wget "$DEB_URL" -O "$DEB_FILE" || { print_message $RED "Failed to download $DEB_
 
 print_message $YELLOW "Installing python3-dev package ($DEB_FILE)..."
 dpkg -i "$DEB_FILE" || { print_message $RED "Failed to install $DEB_FILE. Exiting."; exit 1; }
+rm "$DEB_FILE"
 
 
 # Install required Python packages, using the path from $CURRENT_DIR
