@@ -24,15 +24,36 @@ fi
 # Activate the virtual environment
 source .venv/bin/activate || { print_message $RED "Failed to activate virtual environment. Exiting."; exit 1; }
 
-# Download and install python3-dev deb package
-DEB_URL="https://synaptics-synap.github.io/examples-prebuilts/packages/python3-dev_3.10.13-r0_arm64.deb"
-DEB_FILE="python3-dev_3.10.13-r0_arm64.deb"
+# Detect Python version inside the venv (major.minor)
+PY_VERSION=$(python -c 'import sys; print(f"{sys.version_info[0]}.{sys.version_info[1]}")') || {
+    print_message $RED "Failed to detect Python version. Exiting."
+    exit 1
+}
 
-print_message $YELLOW "Downloading python3-dev package..."
+print_message $BLUE "Detected Python version in .venv: $PY_VERSION"
+
+# Download and install python3-dev deb package
+case "$PY_VERSION" in
+    "3.10")
+        DEB_URL="https://synaptics-synap.github.io/examples-prebuilts/packages/python3-dev_3.10.13-r0_arm64.deb"
+        DEB_FILE="python3-dev_3.10.13-r0_arm64.deb"
+        ;;
+    "3.12")
+        DEB_URL="https://synaptics-synap.github.io/examples-prebuilts/packages/python3-dev_3.12.9-r0_arm64.deb"
+        DEB_FILE="python3-dev_3.12.9-r0_arm64.deb"
+        ;;
+    *)
+        print_message "$RED" "Unsupported Python version: $PY_VERSION. Only 3.10 and 3.12 are supported."
+        exit 1
+        ;;
+esac
+
+print_message $YELLOW "Downloading python3-dev package for Python $PY_VERSION..."
 wget "$DEB_URL" -O "$DEB_FILE" || { print_message $RED "Failed to download $DEB_FILE. Exiting."; exit 1; }
 
-print_message $YELLOW "Installing python3-dev package..."
+print_message $YELLOW "Installing python3-dev package ($DEB_FILE)..."
 dpkg -i "$DEB_FILE" || { print_message $RED "Failed to install $DEB_FILE. Exiting."; exit 1; }
+rm "$DEB_FILE"
 
 
 # Install required Python packages, using the path from $CURRENT_DIR

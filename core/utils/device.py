@@ -1,19 +1,27 @@
 import logging
-import subprocess
+import re
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
+_SOC_RE = re.compile(r"(sl16[248]0)")
 
 def get_SoC() -> str | None:
     try:
-        soc = subprocess.check_output(['cat', '/etc/hostname']).decode().strip()
-        logger.info("Detected SoC: %s", soc)
-        if soc not in ["sl1680", "sl1640", "sl1620"]:
-            logger.warning("Unknown SoC: %s", soc)
+        text = Path("/etc/hostname").read_text().strip()
+        logger.info("Detected raw hostname: %s", text)
+        m = _SOC_RE.search(text.lower())
+        if not m:
+            logger.warning("Unknown SoC in hostname: %s", text)
             return None
+        soc = m.group(1)
+        logger.info("Detected SoC: %s", soc)
         return soc
-    except subprocess.CalledProcessError():
+    except OSError:
         logger.warning("Failed to detect SoC")
+        return None
+    except Exception:
+        logger.exception("Unexpected error while detecting SoC")
         return None
 
 

@@ -9,10 +9,10 @@
     },
     {
         "token": "{light_on}",
-        "command": "echo 'light on' & python core/tools/gpio.py 484 out 1"
+        "command": "echo 'light on' & python core/tools/gpio.py 36 -w 1"
     },
     {
         "token": "{light_off}",
-        "command": "echo 'light off' & python core/tools/gpio.py 484 out 0"
+        "command": "echo 'light off' & python core/tools/gpio.py 36 -w 0"
     }
 ]

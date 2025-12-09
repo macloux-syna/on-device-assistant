@@ -7,10 +7,12 @@ soundfile
 huggingface-hub
 piper-tts
 websocket-server
-llama-cpp-python @ https://synaptics-synap.github.io/examples-prebuilts/packages/llama_cpp_python-0.3.14-cp310-cp310-linux_aarch64.whl
+llama-cpp-python @ https://synaptics-synap.github.io/examples-prebuilts/packages/llama_cpp_python-0.3.14-cp310-cp310-linux_aarch64.whl ; python_version == "3.10"
+llama-cpp-python @ https://synaptics-synap.github.io/examples-prebuilts/packages/llama_cpp_python-0.3.16-cp312-cp312-linux_aarch64.whl ; python_version == "3.12"
 synap-python
 onnxruntime>=1.20.0,<1.21.0
 scikit-learn
 opencv-python-headless
 sentencepiece
 kittentts @ https://github.com/KittenML/KittenTTS/releases/download/0.1/kittentts-0.1.0-py3-none-any.whl
+gpiod
