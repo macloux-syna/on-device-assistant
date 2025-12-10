@@ -157,7 +157,8 @@ def main():
 
     tts_agent = TextToSpeechAgent(
         args.tts_model,
-        args.tts_voice
+        args.tts_voice,
+        playback_device=args.playback_device,
     )
 
     stt_agent = None
@@ -180,6 +181,7 @@ def main():
             min_silence_duration_ms=args.silence_ms,
             eager_load=eager_load,
             cpu_only=cpu_only,
+            record_device=args.record_device,
         )
 
     with ExitStack() as stack:

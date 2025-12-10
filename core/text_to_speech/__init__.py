@@ -29,12 +29,15 @@ class TextToSpeechAgent:
         tts_model: Literal["piper", "kitten"] = "piper",
         tts_voice: str | None = None,
         output_dir: str = ".cache/text_to_speech",
-        audio_manager: AudioManager | None = None
+        audio_manager: AudioManager | None = None,
+        playback_device: str | None = None,
     ):
         self.tts = tts_factory(tts_model, tts_voice)
         self.output_dir = output_dir
         os.makedirs(self.output_dir, exist_ok=True)
         self.audio_manager = audio_manager or AudioManager()
+        if isinstance(playback_device, str):
+            self.audio_manager.set_playback_device(playback_device)
 
     @staticmethod
     def file_checksum(content: str, hash_length: int = 16) -> str:
