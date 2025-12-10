@@ -9,13 +9,13 @@ _SOC_RE = re.compile(r"(sl16[248]0)")
 def get_SoC() -> str | None:
     try:
         text = Path("/etc/hostname").read_text().strip()
-        logger.info("Detected raw hostname: %s", text)
+        logger.debug("Detected raw hostname: %s", text)
         m = _SOC_RE.search(text.lower())
         if not m:
             logger.warning("Unknown SoC in hostname: %s", text)
             return None
         soc = m.group(1)
-        logger.info("Detected SoC: %s", soc)
+        logger.debug("Detected SoC: %s", soc)
         return soc
     except OSError:
         logger.warning("Failed to detect SoC")
