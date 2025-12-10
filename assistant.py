@@ -283,6 +283,11 @@ if __name__ == "__main__":
         default=False,
         help="Disable Speech-To-Text"
     )
+    stt_args.add_argument(
+        "--record-device",
+        type=str,
+        help="Record device name (as seen in `arecord -l`)"
+    )
     tt_args = parser.add_argument_group("text translation options")
     tt_args.add_argument(
         "--tt-lang", type=str, default="zh", help="Target language for translation"
@@ -311,6 +316,11 @@ if __name__ == "__main__":
         "--tts-voice",
         type=str,
         help="Voice for text-to-speech model"
+    )
+    tts_args.add_argument(
+        "--playback-device",
+        type=str,
+        help="Playback device name (as seen in `aplay -l`)"
     )
     args = parser.parse_args()
 

@@ -52,7 +52,7 @@ class TextToSpeechAgent:
             logger.debug("Cached TTS to '%s'", output_filename)
 
         if play_audio:
-            if self.audio_manager.device:
+            if self.audio_manager.playback_device_id:
                 self.audio_manager.play(output_filename)
             else:
                 logger.warning("Skipping audio playback, no valid playback device in audio manager")
