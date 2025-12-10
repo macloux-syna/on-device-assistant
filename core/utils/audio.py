@@ -329,6 +329,7 @@ class USBAudioDeviceManager:
             raise ValueError(f"'{device_name}' is not a valid ALSA record device")
         if self._astra_version != "1.6.0":
             self._input_device = input_device
+        logger.debug("Record device set to '%s' (%s)", device_name, self._input_device)
 
     def set_playback_device(self, device_name: str):
         output_device = self._wait_for_usb_audio_device("output", device_name)
@@ -341,6 +342,7 @@ class USBAudioDeviceManager:
             raise ValueError(f"'{device_name}' is not a valid ALSA playback device")
         if self._astra_version != "1.6.0":
             self._output_device = output_device
+        logger.debug("Playback device set to '%s' (%s)", device_name, self._output_device)
 
     def _run_alsa_cmd(
         self,

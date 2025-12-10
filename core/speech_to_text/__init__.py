@@ -65,6 +65,7 @@ class SpeechToTextAgent:
         n_threads: int | None = None,
         threshold: float = 0.3,
         min_silence_duration_ms: int = 300,
+        record_device: str | None = None,
     ):
         self.handler = handler
 
@@ -84,6 +85,8 @@ class SpeechToTextAgent:
         )
 
         self.audio_manager = audio_manager or AudioManager()
+        if isinstance(record_device, str):
+            self.audio_manager.set_record_device(record_device)
         self.caption_cache = []
         self.lookback_size = LOOKBACK_CHUNKS * CHUNK_SIZE
         self.speech = np.empty(0, dtype=np.float32)
