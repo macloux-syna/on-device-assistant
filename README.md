@@ -40,6 +40,9 @@ python assistant.py
 
 Run `python assistant.py --help` to view all available options
 
+> [!TIP]
+> Use `--record-device` and `--playback-device` to choose which USB audio devices to record from and playback through
+
 ### Additional Demos
 Model-specific examples are available in the [demos/](demos/) directory:
 ```sh
