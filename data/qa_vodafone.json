@@ -1,0 +1,146 @@
+[
+  {
+    "question": "What should I do first if a device cannot connect to the Vodafone Ultra Hub 7 Wi-Fi?",
+    "answer": "Check that Wi-Fi is enabled on the Ultra Hub 7 and on the client device. Confirm you are selecting the correct Vodafone Wi-Fi name from the router label, Wi-Fi card, or Ultra Hub user interface. Re-enter the Wi-Fi password carefully, then restart the client device and try again."
+  },
+  {
+    "question": "Where can I find the default Wi-Fi name and password for the Vodafone Ultra Hub 7?",
+    "answer": "The default Wi-Fi name and password are printed on the product label and on the supplied Wi-Fi card. The Wi-Fi card also includes a QR code that can be scanned by a phone to join the network."
+  },
+  {
+    "question": "Can I connect to the Vodafone Ultra Hub 7 Wi-Fi using a QR code?",
+    "answer": "Yes. Scan the QR code on the Wi-Fi card or on the back of the Ultra Hub 7. The phone should read the Wi-Fi name and password automatically and offer to join the network."
+  },
+  {
+    "question": "How do I connect a device to the Vodafone Ultra Hub 7 using WPS?",
+    "answer": "Press the WPS button on the Ultra Hub 7, then start WPS on the client device within 2 minutes. This only works if the client device supports WPS push-button connection."
+  },
+  {
+    "question": "Why does WPS not connect my device to the Ultra Hub 7?",
+    "answer": "The device may not support WPS, WPS may not have been started within the 2-minute window, or WPS may be disabled in the router settings. Try again close to the router, or connect manually using the Wi-Fi name and password."
+  },
+  {
+    "question": "Why do I only see one Wi-Fi network name on the Ultra Hub 7?",
+    "answer": "The Ultra Hub 7 can present the 2.4 GHz and 5 GHz Wi-Fi bands under one network name using band steering and MLO. This lets the router choose the best band for the device."
+  },
+  {
+    "question": "Why does an older device fail to connect to the Ultra Hub 7 Wi-Fi?",
+    "answer": "Older devices may not support the router's selected Wi-Fi mode, security mode, or band steering behavior. Try splitting the 2.4 GHz and 5 GHz Wi-Fi names, then connect the older device to the 2.4 GHz network."
+  },
+  {
+    "question": "When should I split the 2.4 GHz and 5 GHz Wi-Fi names?",
+    "answer": "Split the Wi-Fi names when a device only works on 2.4 GHz, when an IoT device cannot complete setup, or when you need to force a device onto a specific band for testing. Use the router Wi-Fi settings or expert mode to separate the bands."
+  },
+  {
+    "question": "Why is my smart home or IoT device not connecting to the Ultra Hub 7?",
+    "answer": "Many smart home devices only support 2.4 GHz Wi-Fi. Split the Wi-Fi names, connect the phone and IoT device to the 2.4 GHz network during setup, then test again. Also check that the Wi-Fi password does not include characters the IoT device cannot handle."
+  },
+  {
+    "question": "What should I do if Wi-Fi is slow near the Ultra Hub 7?",
+    "answer": "Run a speed test near the router and compare it with a wired Ethernet test if possible. Restart the router, check for heavy downloads or many active devices, and test with another phone or laptop. If wired speed is also low, the issue may be the broadband line rather than Wi-Fi."
+  },
+  {
+    "question": "What should I do if Wi-Fi is slow far from the Ultra Hub 7?",
+    "answer": "Move closer to the router and retest. If speed improves, the issue is coverage or interference. Place the router in an open central position, away from walls, metal objects, TVs, cordless phones, microwaves, and cabinets. Use a Vodafone booster or Ethernet backhaul if coverage remains weak."
+  },
+  {
+    "question": "Why does my device keep disconnecting from the Ultra Hub 7 Wi-Fi?",
+    "answer": "Random disconnects can be caused by weak signal, interference, band steering transitions, power saving on the client device, or router firmware issues. Test close to the router, restart the router, update the client device, and try splitting the Wi-Fi bands for the affected device."
+  },
+  {
+    "question": "What does 'Connected, no internet' mean on the Ultra Hub 7 Wi-Fi?",
+    "answer": "The device is connected to the Wi-Fi network but cannot reach the internet. Check whether other devices have internet access. If all devices are affected, restart the Ultra Hub 7 and check the broadband connection. If only one device is affected, forget the Wi-Fi network on that device and reconnect."
+  },
+  {
+    "question": "How do I forget and reconnect to the Ultra Hub 7 Wi-Fi on a client device?",
+    "answer": "Open the device Wi-Fi settings, select the Vodafone Wi-Fi network, choose Forget or Remove, then reconnect using the correct Wi-Fi password or QR code. This clears old credentials and can fix authentication errors."
+  },
+  {
+    "question": "Why does my phone say the Ultra Hub 7 password is incorrect?",
+    "answer": "Confirm the Wi-Fi name is correct and re-enter the password from the label, Wi-Fi card, or router interface. Check for similar characters such as O and 0 or I and 1. If the Wi-Fi password was changed, use the updated password from the router interface."
+  },
+  {
+    "question": "How do I check or recover the current Ultra Hub 7 Wi-Fi password?",
+    "answer": "Connect to the Ultra Hub 7 by Wi-Fi or Ethernet and open the Ultra Hub user interface in a browser. Check the Wi-Fi settings page for the current Wi-Fi name and password. If you cannot log in, use the default details on the router label or perform a factory reset as a last resort."
+  },
+  {
+    "question": "How do I turn Wi-Fi on or off on the Ultra Hub 7?",
+    "answer": "Use the Wi-Fi button on the Ultra Hub 7, the router user interface, or the Vodafone UltraConnect app. If Wi-Fi was disabled by a schedule in the app, disable the schedule or change the active time window."
+  },
+  {
+    "question": "Why did the Ultra Hub 7 Wi-Fi disappear from the device list?",
+    "answer": "Wi-Fi may be switched off, hidden, disabled by schedule, or the router may be rebooting. Press the Wi-Fi button, check the UltraConnect app or router interface, and restart the router if the network name does not return."
+  },
+  {
+    "question": "How should I place the Ultra Hub 7 for better Wi-Fi coverage?",
+    "answer": "Place the router upright in an open area, ideally central in the home and away from thick walls, metal, mirrors, TVs, cordless phones, microwaves, and enclosed cabinets. Avoid direct sunlight and heat sources."
+  },
+  {
+    "question": "Can overheating cause Ultra Hub 7 Wi-Fi problems?",
+    "answer": "Yes. Heat can cause poor performance or router instability. Keep the Ultra Hub 7 in a ventilated place, away from direct sunlight, radiators, and enclosed cabinets. Restart it after it has cooled down if it became very warm."
+  },
+  {
+    "question": "Why does Wi-Fi work better on 2.4 GHz than 5 GHz?",
+    "answer": "2.4 GHz normally has longer range and better wall penetration, but lower speed. 5 GHz normally gives higher speed at shorter range. If a device is far from the router, 2.4 GHz may be more stable."
+  },
+  {
+    "question": "Why does Wi-Fi work better on 5 GHz than 2.4 GHz?",
+    "answer": "5 GHz usually has less interference and higher throughput than 2.4 GHz when the device is close enough to the router. Use 5 GHz for streaming, gaming, and speed testing when coverage is good."
+  },
+  {
+    "question": "What should I do if the Ultra Hub 7 Wi-Fi is unstable after changing settings?",
+    "answer": "Undo the last Wi-Fi change or restore automatic settings. If you changed channel, bandwidth, security mode, or split SSIDs, revert one setting at a time and retest. Restart the router after applying changes."
+  },
+  {
+    "question": "Should I change the Wi-Fi channel on the Ultra Hub 7?",
+    "answer": "Use automatic channel selection unless there is clear interference. If many nearby networks are using the same channel, enter the Wi-Fi expert settings and select a less congested channel for 2.4 GHz or 5 GHz, then retest."
+  },
+  {
+    "question": "Why is Wi-Fi speed different between phones, laptops, and TV boxes?",
+    "answer": "Different devices support different Wi-Fi standards, antenna designs, channel widths, and bands. A Wi-Fi 7 router can still be limited by an older Wi-Fi 4, Wi-Fi 5, or Wi-Fi 6 client device."
+  },
+  {
+    "question": "How can I tell if the issue is Wi-Fi or the broadband connection?",
+    "answer": "Test internet speed using Ethernet from a laptop or other wired device. If Ethernet is good but Wi-Fi is poor, focus on Wi-Fi placement, interference, band, and client settings. If Ethernet is also poor, troubleshoot the broadband line or contact Vodafone."
+  },
+  {
+    "question": "What should I do if only one device has Wi-Fi issues?",
+    "answer": "Forget and reconnect the Wi-Fi network on that device, restart it, update its software, and test it close to the router. If other devices work normally, the problem is likely the client device or its Wi-Fi settings."
+  },
+  {
+    "question": "What should I do if all devices have Wi-Fi issues?",
+    "answer": "Restart the Ultra Hub 7, check that Wi-Fi is enabled, verify there is no Wi-Fi schedule disabling it, and check the broadband status. If the issue continues on all devices, test Ethernet and contact Vodafone support if broadband is also affected."
+  },
+  {
+    "question": "Can I use Ethernet instead of Wi-Fi with the Ultra Hub 7?",
+    "answer": "Yes. Connect the device to one of the LAN ports using an Ethernet cable. Ethernet is useful for speed testing, troubleshooting, TV boxes, gaming devices, and devices that need stable connectivity."
+  },
+  {
+    "question": "What should I do if my TV box buffers on Ultra Hub 7 Wi-Fi?",
+    "answer": "Move the TV box closer to the router or use Ethernet if available. If Ethernet is not possible, use 5 GHz when signal is strong, reduce interference near the TV, and avoid placing the router or TV box inside a cabinet."
+  },
+  {
+    "question": "Why does my device connect to Wi-Fi but apps still fail?",
+    "answer": "Check whether websites open in a browser on the same device. If browsing works, the issue may be the app, DNS, account, or service. Restart the app and device. If browsing also fails, forget and reconnect Wi-Fi or restart the router."
+  },
+  {
+    "question": "How do I use the UltraConnect app for Wi-Fi troubleshooting?",
+    "answer": "Open the UltraConnect app to check connected devices, Wi-Fi status, schedules, and router management options. Use it to confirm whether the affected device is connected and whether Wi-Fi has been disabled or scheduled off."
+  },
+  {
+    "question": "Can a Wi-Fi booster help with Ultra Hub 7 coverage issues?",
+    "answer": "Yes. A booster can improve coverage in rooms far from the router. Place the booster where it still has a good signal from the Ultra Hub 7, not in the dead zone. For best stability, use Ethernet backhaul if supported."
+  },
+  {
+    "question": "Why does my device connect to the booster but still have poor speed?",
+    "answer": "The booster may be too far from the Ultra Hub 7 or placed in an area with weak signal. Move it closer to the router and retest. Also check that the device is connected to the correct Wi-Fi network and not roaming between weak signals."
+  },
+  {
+    "question": "When should I factory reset the Ultra Hub 7?",
+    "answer": "Factory reset only after normal troubleshooting fails or if you cannot access the router due to lost credentials. A reset removes custom Wi-Fi names, passwords, schedules, port settings, and other configuration changes."
+  },
+  {
+    "question": "How do I prepare useful information before contacting Vodafone support?",
+    "answer": "Record whether the issue affects one device or all devices, whether Ethernet works, the room where Wi-Fi fails, the device model, the Wi-Fi band used, speed test results, and any recent router setting changes."
+  }
+]
